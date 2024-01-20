@@ -1,0 +1,41 @@
+<!-- home.html -->
+<div id="homePage" class="page hidden">
+    <h1>Home Page</h1>
+    <div>
+        <label>
+            Filter by Type:
+            <select id="typeFilter" onchange="filterPets()">
+                <option value="ALL">ALL</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Filter by Breed:
+            <select id="breedFilter" onchange="filterPets()">
+                <option value="ALL">ALL</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Filter by Gender:
+            <select id="genderFilter" onchange="filterPets()">
+                <option value="ALL">ALL</option>
+            </select>
+        </label>
+    </div>
+    <div>
+        <label>
+            Filter by Age:
+            <select id="ageFilter" onchange="filterPets()">
+                <option value="ALL">ALL</option>
+            </select>
+        </label>
+    </div>
+    <div id="petList">
+        <h2>Available Pets</h2>
+        <ul id="pets"></ul>
+    </div>
+</div>
+<script src="home.js"></script>
